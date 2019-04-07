@@ -6,13 +6,13 @@ using System.Linq;
 namespace Consumables.Api.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class AccountsControllerTest
     {
         [TestMethod]
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountsController controller = new AccountsController();
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -28,7 +28,7 @@ namespace Consumables.Api.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountsController controller = new AccountsController();
 
             // Act
             string result = controller.Get(5);
@@ -41,7 +41,7 @@ namespace Consumables.Api.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountsController controller = new AccountsController();
 
             // Act
             controller.Post("value");
@@ -53,7 +53,7 @@ namespace Consumables.Api.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountsController controller = new AccountsController();
 
             // Act
             controller.Put(5, "value");
@@ -65,7 +65,7 @@ namespace Consumables.Api.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountsController controller = new AccountsController();
 
             // Act
             controller.Delete(5);
